@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>The Velvet Seal</title>
+</head>
+<body>
+    
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center bg-no-repeat">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/Logo.png"
+            alt="Logo Cocktails Pub"
+            class="w-32 h-32 rounded-full shadow-1g hover:scale-110 duration-200" />
+           <h1 class="text-4xl mt-4 mb-2 font-bold text-white">The Velvet Seal</h1> 
+           <span class="text-white font-medium">Rua dos sonhos, São Paulo - SP</span>
+
+           <div class="bg-green-600 px-4 py-1 round-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Seg à Dom - 18:00 às 01:00</span>
+           </div>
+
+        </div>
+    </header>
+
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso menu:</h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl" px-2 mb-16>
+
+            <div class="flex gap-2">
+                <img src="./assets/Margarita.png"
+                alt="Hamburger Smash"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Margarita</p>
+                <p class="text-sm">O drink de tequila mais pedido do mundo. Combina tequila, licor de laranja (Cointreau) e suco de limão, servido com a icônica borda de sal.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 28.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Margarita"
+                        data-price="28.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/Old Fashioned.png"
+                alt="Old Fashioned"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Old Fashioned</p>
+                <p class="text-sm">O rei dos coquetéis de uísque. É feito com bourbon ou rye whiskey, açúcar, água e bitters (geralmente Angostura), decorado com uma casca de laranja.
+</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 39.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Old Fashioned"
+                        data-price="39.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/Negroni.png"
+                alt="Negroni"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Negroni</p>
+                <p class="text-sm">Um clássico italiano que ganhou força absoluta nos últimos anos. Leva partes iguais de gin, vermute tinto e Campari. É apreciado pelo seu perfil amargo e sofisticado.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 35.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Negroni"
+                        data-price="35.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/Espresso Martini.png"
+                alt="Espresso Martini"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Espresso Martini</p>
+                <p class="text-sm">O "queridinho" da atualidade, que mistura vodka, café espresso e licor de café. É a escolha número um para quem busca energia e sabor em uma única taça.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 30</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Espresso Martini"
+                        data-price="30"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+                    <div class="flex gap-2">
+                <img src="./assets/Mojito.png"
+                alt="Mojito"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Mojito</p>
+                <p class="text-sm">Vindo diretamente de Cuba, é a definição de refrescância. Leva rum branco, açúcar, limão, hortelã e água com gás.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 29.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Mojito"
+                        data-price="29.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+
+                    <div class="flex gap-2">
+                <img src="./assets/Aperol Spritz.png"
+                alt="Aperol Spritz"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Aperol Spritz</p>
+                <p class="text-sm">O drink que "pintou" o mundo de laranja. Leva Aperol, espumante (prosecco) e água com gás. É extremamente popular em happy hours e dias quentes.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 40.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Aperol Spritz"
+                        data-price="40.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+                    <div class="flex gap-2">
+                <img src="./assets/Daiquiri.png"
+                alt="Daiquiri"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Daiquiri</p>
+                <p class="text-sm">Simples e elegante, é a base da coquetelaria com rum. Na sua forma clássica (não a batida com frutas), leva apenas rum, limão e xarope de açúcar.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 35.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Daiquiri"
+                        data-price="35.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+                    <div class="flex gap-2">
+                <img src="./assets/Caipirinha.png"
+                alt="Caipirinha"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Caipirinha</p>
+                <p class="text-sm">A nossa representante brasileira é reconhecida internacionalmente pela IBA (Associação Internacional de Bartenders). Cachaça, limão, açúcar e gelo.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 20.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Caipirinha"
+                        data-price="20.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+                    <div class="flex gap-2">
+                <img src="./assets/Moscow Mule.png"
+                alt="Caipirinha"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Moscow Mule</p>
+                <p class="text-sm">Famoso pela canequinha de cobre, este drink de vodka, suco de limão e ginger beer (ou espuma de gengibre, muito comum no Brasil) continua sendo um sucesso de vendas.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 35.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Moscow Mule"
+                        data-price="35.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+                    <div class="flex gap-2">
+                <img src="./assets/Whiskey Sour.png"
+                alt="Caipirinha"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Whiskey Sour</p>
+                <p class="text-sm">Um equilíbrio perfeito entre o forte do uísque e o ácido do limão, geralmente suavizado com açúcar e, em receitas tradicionais, clara de ovo para criar aquela espuma densa no topo.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 20.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Whiskey Sour"
+                        data-price="45"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+
+            </div>
+
+            
+
+            
+            
+        </main>
+
+        <div class="mx-auto max-w-7xl px2 my-2 mt-30 mb-10">
+            <h2 class="font-bold text-3xl">
+                Sucos Naturais:
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <div class="flex gap-2">
+                <img src="./assets/Laranja.png"
+                alt="Coca lata"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Suco de Laranja Natural</p>
+                <p class="text-sm">O clássico indispensável. Feito 100% com laranjas selecionadas, sem adição de açúcar ou conservantes. Uma explosão de vitamina C e frescor.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 15</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Suco de Laranja Natural"
+                        data-price="15"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            </div>
+                  <div class="flex gap-2">
+                <img src="./assets/Limonada Suíça.png"
+                alt="Limonada Suíça"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Limonada Suíça</p>
+                <p class="text-sm">Refrescância extrema com um toque cremoso. Limões batidos com casca, gelo e um toque de leite condensado para equilibrar a acidez.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 20</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Limonada Suíça"
+                        data-price="20"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            
+            </div>
+
+             <div class="flex gap-2">
+                <img src="./assets/Suco de Abacaxi com Hortelã.png"
+                alt="Suco de Abacaxi com Hortelã"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Suco de Abacaxi com Hortelã</p>
+                <p class="text-sm">A combinação perfeita para dias quentes. A doçura do abacaxi pérola harmonizada com o frescor das folhas de hortelã colhidas na hora.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 15</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Suco de Abacaxi com Hortelã"
+                        data-price="15"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            
+            </div>
+         <div class="flex gap-2">
+                <img src="./assets/Suco de Morango com Leite.png"
+                alt="Suco de Morango com Leite"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Suco de Morango com Leite</p>
+                <p class="text-sm">Sabor de infância e textura aveludada. Morangos frescos batidos com leite gelado, criando um suco encorpado e naturalmente doce.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 16</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Suco de Morango com Leite"
+                        data-price="16"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            
+            </div>
+             <div class="flex gap-2">
+                <img src="./assets/Suco de Maracujá.png"
+                alt="Suco de Maracujá"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Suco de Maracujá</p>
+                <p class="text-sm">O calmante natural favorito dos brasileiros. Sabor intenso, ácido e tropical, servido bem gelado para acompanhar qualquer refeição.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 15</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Suco de Maracujá"
+                        data-price="15"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            
+            </div>
+             <div class="flex gap-2">
+                <img src="./assets/Suco de Caju.png"
+                alt="Suco de Caju"
+                class="w-28 h28 rounded-md hover:scale-11- hover:-rotate-2 duration-300" />
+
+
+            <div>
+                <p class="font-bold">Suco de Caju</p>
+                <p class="text-sm">O autêntico sabor do Nordeste. Um suco encorpado, de aroma marcante e sabor adstringente na medida certa. Feito com a polpa selecionada do caju, é extremamente refrescante e rico em nutrientes.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold">R$ 15</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-nome="Suco de Caju"
+                        data-price="15"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                </div>
+            </div>
+            
+            
+            </div>
+    </div>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 lef-0 z-[99] items-center justify-center hidden" id="cart-modal">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega</p>
+        <input type="text"
+        placeholder="Digite seu endereço completo"
+        id="address"
+        class="w-full border-2 p-1 rounded my1"/>
+        <p class="text-red-500  hidden" id="address-warn">Digite seu endereço completo!</p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
